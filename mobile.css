@@ -58,6 +58,9 @@
       width: 100%;
     }
   }
+  .static {
+    margin-bottom: -5px;
+  }
   body .inn {
     height: 600px;
   }
