@@ -3,10 +3,12 @@
     position: static;
     width: 100%;
     height: 100vh;
+    min-height: 400px;
     /* max-width: 800px; */
   }
   .static {
     margin-bottom: -3px;
+    /* min-height: 400px; */
   }
   #content {
     position: absolute;
@@ -89,3 +91,12 @@
   }
 }
 
+@media screen and (max-height: 450px) {
+  #first-img {
+    min-height: 500px;
+  }
+  .static {
+    height: auto;
+    min-height: 500px;
+  }
+}

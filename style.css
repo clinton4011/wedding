@@ -36,12 +36,8 @@ body {
 }
 .static {
   position: relative;
+  /* overflow: hidden; */
   color: black;
-  /* border: 1px solid green; */
-
-  /* height: 100%;
-    
-    width: 60%;  */
   & img {
     width: 60%;
     /* border-radius: 0 15px 15px 0; */
@@ -76,6 +72,7 @@ body {
 .mobile {
   display: block;
   width: 40%;
+  overflow: scroll;
 
   background-color: var(--white-color);
   height: 100%;
@@ -262,6 +259,7 @@ body {
 
   & button:hover {
     background: white;
+    font-size: 14px;
     box-shadow: 0 0 30px 5px white;
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
@@ -476,6 +474,164 @@ footer {
     }
   }
 }
+
+/* gift */
+.second-body {
+  padding: 40px 0;
+  & .arrow-left {
+    position: absolute;
+    top: 60px;
+    left: 5%;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: black;
+    border: none;
+    color: white;
+  }
+}
+.tit {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  width: 100%;
+  color: black;
+  padding: 20px 0;
+}
+
+.gifts {
+  padding: 20px 0;
+  display: flex;
+  /* border: 3px solid black; */
+  width: 100%;
+  color: black;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  & div {
+    width: 30%;
+    /* padding: 30px 0; */
+    padding-bottom: 30px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 15px;
+    & img {
+      width: 100%;
+      /* height: 20px; */
+      
+    } & a{
+      display: flex;
+      width: 100%;
+      align-items: center;
+      /* justify-content: space-evenly; */
+      /* padding-right: 20px; */
+      /* position: relative; */
+      height: 100%;
+      padding: 0 4px;
+      text-decoration: none;
+    }
+    & h4{
+       font-size: 25px;
+       font-weight: 400;
+       margin-bottom: 20px;
+    }
+    /* & button {
+      width: 200px;
+      padding: 10px 0;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+    } */
+    & nav {
+      width: 80%;
+      height: 250px;
+      /* border: 2px solid red; */
+      
+    }
+  }
+}
+.fry-pan {
+  height: 250px;
+  
+}
+#large {
+  width: 100%;
+  & img {
+    height: 235px;
+  }
+}
+.bookmarkBtn {
+  width: 140px;
+  height: 50px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.349);
+  background-color: rgb(12, 12, 12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: .7s;
+  overflow: hidden;
+}
+
+.IconContainer {
+  width: 43px;
+  height: 41.5px;
+  background: linear-gradient(to bottom, rgb(255, 136, 255),rgb(172, 70, 255));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  /* position: absolute; */
+  /* left: 2.5px; */
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: .7s;
+}
+
+.icon {
+  border-radius: 1px;
+}
+
+.text {
+  height: 100%;
+  /* width: 100%;
+  text-align: right; */
+  width: 60%;
+  display: flex;
+  /* border: 1px solid white; */
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+  transition-duration: .7s;
+  font-size: 1.04em;
+}
+
+.bookmarkBtn:hover .IconContainer {
+  width: 134px;
+  border-radius: 40px;
+  transition-duration: .7s;
+}
+
+.bookmarkBtn:hover .text {
+  transform: translate(10px);
+  width: 0;
+  font-size: 0;
+  transition-duration: .7s;
+}
+
+.bookmarkBtn:active {
+  transform: scale(0.95);
+  transition-duration: .7s;
+}
+
 @keyframes sh02 {
   from {
     opacity: 0;
