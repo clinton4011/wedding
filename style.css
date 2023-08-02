@@ -3,9 +3,9 @@
   padding: 0;
   box-sizing: border-box;
    scroll-behavior: smooth;
+   /* background-color: #F5F5F5; */
 }
 body {
- 
   color: #333;
   /* max-width: 1200px; */
   margin: 0 auto;
@@ -479,7 +479,7 @@ footer {
 .second-body {
   padding: 40px 0;
   & .arrow-left {
-    position: absolute;
+    position: fixed;
     top: 60px;
     left: 5%;
     font-size: 20px;
@@ -489,6 +489,12 @@ footer {
     background-color: black;
     border: none;
     color: white;
+  }
+  & .arrow-left:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    transition: .5s;
   }
 }
 .tit {
