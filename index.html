@@ -6,6 +6,7 @@
    
     <title>JOY & SHARON</title>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,22 +27,33 @@
     <!-- <header> -->
     <header>
       <div class="static" id="static">
-        <img src="./images/static.jpg" alt="" id="first-img" />
+        <img src="./images/homepage.jpg" alt="" id="first-img" />
+        <!-- <div class="img"></div> -->
         <div class="content" id="content">
           <h1>JOY & SHARON</h1>
           <p>
-            We looked beyond our differences to the beautiful life we wish to
-            create , because our differences did not separate us but made us
-            stronger.
+            ... and He has brought us to this place and has given us this land, a land flowing with milk and honey
+            
           </p>
+          <p>Deuteronomy 26:9 AMP</p>
         </div>
-        <nav id="menuTwo">
+        <div class='me' id='me'>
+          
+          <div class='menu-button'>
+            
+            <div class="bar" id="bar"></div>
+            <div class="bar" id="bar"></div>
+            <div class="bar" id="bar"></div>
+          </div>
+          <h2>MENU</h2>
+        </div>
+        <!-- <nav id="menuTwo">
           <div id="menu"></div>
           <h2>MENU</h2>
-        </nav>
+        </nav> -->
         <div id="mobile" class="mobile">
           <h3>JOY & SHARON</h3>
-          <ul>
+          <ul id="ul">
             <li><a href="#" class="active"> Home</a></li>
             <li><a href="#gb">Story </a></li>
 
@@ -64,7 +76,9 @@
             </div>
           </div>
           <div class="guest">
+            <a href="./images/IV.png" download>
             <button>Unlock Guest List</button>
+            </a>
             <div>
               <h5>View Details</h5>
               <a href="#gb"><i class="fa-solid fa-angle-down"></i></a>
@@ -145,13 +159,22 @@
       </div>
       <div class="calender">
         <div class="schedule" id="schedule">
+          
           <h2>Schedule</h2>
           <p class="below-schedule">SATURDAY OCT 21, 2023</p>
-          <h3>Wedding Party Photoshoot 📷</h3>
-          <h4>1:15 PM to 1:30 PM</h4>
-          <p>
-            We'll take photos ahead of the reception ceremony beginning at 1:15pm sharp. Please be at the reception venue and photo-ready by this time!
-          </p>
+                    <h3 class="reception">Engagement</h3>
+         
+          <h4 class="hanger">
+            <img src="./images/clothes-hanger_3159667.png" alt="hanger icon" /> Dress Code: Milk & Honey
+          </h4>
+          <h4 class="hanger">
+            <img src="./images/location_2838912.png" alt="location icon" /> 
+            <a href="https://goo.gl/maps/7vF8iLq5dqDmgu7E7" target="_blank" rel="noopener noreferrer">1 Amore Street, Allen 101233, Ikeja Lagos</a>
+          </h4>
+          <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3963.4034495585365!2d3.3476793!3d6.5966769!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9343f66dc4ed%3A0x73818b1130a6db96!2sSt.%20Leo&#39;s%20Catholic%20church!5e0!3m2!1sen!2sng!4v1690063311675!5m2!1sen!2sng" width="80%" height="350" style="border:0; border-radius: 10px; margin: 30px 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+          <h3>Church wedding </h3>
+          
           <h4 class="hanger">
             <img src="./images/clothes-hanger_3159667.png" alt="hanger icon" /> Dress Code: Milk & Honey
           </h4>
@@ -161,12 +184,10 @@
           </h4>
           <div class="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.2664358368547!2d3.3335686000000004!3d6.613782199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9179319662a3%3A0xfeea7c7d9354e755!2sTriumphant%20Christian%20Centre%20TCC!5e0!3m2!1sen!2sng!4v1690064760002!5m2!1sen!2sng" width="80%" height="350" style="border:0; border-radius: 10px; margin: 30px 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
           
           <h3 class="reception">Wedding Reception</h3>
-          <h4>1:30 PM to 3:00 PM</h4>
-          <p>
-            For those who will still be available, wedding reception will hold immediately after the Church service
-          </p>
+         
           <h4 class="hanger">
             <img src="./images/clothes-hanger_3159667.png" alt="hanger icon" /> Dress Code: Milk & Honey
           </h4>
@@ -178,6 +199,44 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3963.4034495585365!2d3.3476793!3d6.5966769!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9343f66dc4ed%3A0x73818b1130a6db96!2sSt.%20Leo&#39;s%20Catholic%20church!5e0!3m2!1sen!2sng!4v1690063311675!5m2!1sen!2sng" width="80%" height="350" style="border:0; border-radius: 10px; margin: 30px 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
           </div>
         </div>
+         <div class="swiper mySwiper">
+          <h1 class="mom">Moments</h1>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./images/JS-1.JPG" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/JS-3.JPG" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/JS-7.JPG" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/JS-8.JPG" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/JS-9.JPG" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/JS-11.JPG" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/JS-14.JPG" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/JS-15.JPG" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/JS-17.JPG" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./images/JS-21.JPG" />
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
         <div class="registry" id="registry">
           <h2>Registry</h2>
           <p>Based on your desire to support our wedding, you can make your financial donations to the below accounts</p>
@@ -186,7 +245,7 @@ Account Number: 0020265178 <br>
 Bank: Access Diamond Bank</p>
 <p>
 Account Name: ADEKUNLE JOY <br>
-Account Number: Sharon Shallangwa <br>
+Account Number: 3078800749 <br>
 Bank: First Bank</p>
 <p>
 We are truly honoured to have you share in
@@ -198,7 +257,22 @@ show of love towards u</p>
     </main>
     <!-- footer -->
     <footer>
+      
       <div class="foot" id="foot">
+        <div>
+        <a class="fancy" href="./gallery.html">
+  <span class="top-key"></span>
+  <span class="text">Gallery</span>
+  <span class="bottom-key-1"></span>
+  <span class="bottom-key-2"></span>
+</a>
+        <a class="fancy" href="./gift.html">
+  <span class="top-key"></span>
+  <span class="text">Gifts</span>
+  <span class="bottom-key-1"></span>
+  <span class="bottom-key-2"></span>
+</a>
+</div>
         <ul>
           <li><a href="https://wa.me/+2349064127319" target="_blank" rel="noopener noreferrer">Help</a></li>
           <li> <img src="./images/rings.png" alt=""></li>
@@ -207,4 +281,5 @@ show of love towards u</p>
       </div>
     </footer>
   </body>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </html>

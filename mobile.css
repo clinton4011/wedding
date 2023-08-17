@@ -92,11 +92,38 @@
 }
 
 @media screen and (max-height: 450px) {
+  #static {
+  & #content {
+    position: absolute;
+    border: 2px solid red;
+  top: 40%;
+  }
+}
   #first-img {
     min-height: 500px;
   }
   .static {
     height: auto;
     min-height: 500px;
+  }
+}
+@media screen and (max-width: 330px) {
+ #first-img {
+    min-height: 1000px;
+  }
+}
+@media screen and (max-width: 250px) {
+  #first-img {
+    height: auto;
+  }
+  .static {
+    
+    display: flex;
+    align-items: center;
+  }
+  #content {
+    margin-top: 40px;
+    position: auto;
+    top: 0;
   }
 }
