@@ -643,6 +643,7 @@ justify-content: space-evenly;
     flex-direction: column;
     margin-bottom: 40px;
     align-items: center;
+    overflow: hidden;
     border: 1px solid gray;
     border-radius: 15px;
     & img {
@@ -815,7 +816,7 @@ justify-content: space-evenly;
  margin: 0;
  outline: none;
  overflow: visible;
- width: 130px;
+ width: 150px;
  padding: 1.25em 2em;
  position: relative;
  text-align: center;
