@@ -144,6 +144,7 @@ font-family: 'Tinos', serif;
 
   top: 0;
   z-index: 3;
+  /* border: 1px solid black; */
 }
 #mobile.open {
   left: 0px;
@@ -163,6 +164,8 @@ font-family: 'Tinos', serif;
 
 #mobile ul {
   list-style: none;
+  width: 100%;
+  /* border: 8px solid red; */
 }
 #mobile a {
   display: block;

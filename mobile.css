@@ -51,6 +51,8 @@
 @media screen and (max-width: 460px) {
  
   #content {
+    position: absolute;
+    top: 50%;
     width: 80%;
 
     & h1 {
@@ -110,8 +112,12 @@
   }
 }
 @media screen and (max-width: 330px) {
+  #content {
+    position: absolute;
+    top: 40%;
+  }
  #first-img {
-    min-height: 1000px;
+    min-height: 700px;
   }
 }
 @media screen and (max-width: 250px) {
