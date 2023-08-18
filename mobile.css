@@ -49,6 +49,7 @@
   }
 }
 @media screen and (max-width: 460px) {
+ 
   #content {
     width: 80%;
 
@@ -92,6 +93,7 @@
 }
 
 @media screen and (max-height: 450px) {
+  
   #static {
   & #content {
     position: absolute;
